@@ -1,0 +1,6 @@
+ input n (input 0 to stop) :  wa =  55
+ input n (input 0 to stop) :   sorry, input positive n ... 
+ input n (input 0 to stop) :  wa =  210
+ input n (input 0 to stop) :  wa =  465
+ input n (input 0 to stop) :   exit from do-loop ... 
+Application 1040437 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~0

@@ -1,0 +1,8 @@
+  input n (if n <= 0 , stop) : 
+ wa =  55
+  input n (if n <= 0 , stop) : 
+ wa =  5050
+  input n (if n <= 0 , stop) : 
+ wa =  500500
+  input n (if n <= 0 , stop) : 
+Application 1040382 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~0

@@ -1,0 +1,8 @@
+
+lib-4001 : UNRECOVERABLE library error 
+  A READ operation tried to read past the end-of-file.
+
+Encountered during a list-directed READ from unit 100
+Fortran unit 100 is connected to a sequential formatted text file
+  (standard input).
+_pmiu_daemon(SIGCHLD): [NID 00309] [c1-0c1s13n1] [Fri Jun 14 17:15:00 2019] PE RANK 0 exit signal Aborted
