@@ -1,0 +1,8 @@
+  input m, n (if m or n <= 0 , stop) : 
+ wa =  55
+  input m, n (if m or n <= 0 , stop) : 
+ wa =  44
+  input m, n (if m or n <= 0 , stop) : 
+ wa =  44
+  input m, n (if m or n <= 0 , stop) : 
+Application 1055273 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~8

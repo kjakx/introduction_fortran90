@@ -1,0 +1,12 @@
+  input m, n (if m or n <= 0 , stop) : 
+ GCD of 24 and 16 is 8
+  input m, n (if m or n <= 0 , stop) : 
+ GCD of 16 and 24 is 8
+  input m, n (if m or n <= 0 , stop) : 
+ GCD of 324 and 84 is 12
+  input m, n (if m or n <= 0 , stop) : 
+  m is too large! 
+  input m, n (if m or n <= 0 , stop) : 
+  n is too large! 
+  input m, n (if m or n <= 0 , stop) : 
+Application 1058315 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~0

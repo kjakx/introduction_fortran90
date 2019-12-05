@@ -1,0 +1,14 @@
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+ 13 is a prime.
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+ 2351 is a prime.
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+ 4463 is a prime.
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+ 145447 is not a prime. It can be divided by 37
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+ 886991 is not a prime. It can be divided by 7
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+  n is too large! 
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+Application 1057464 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~0

@@ -1,0 +1,30 @@
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+        2371 =
+        2371
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+         563 =
+         563
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+        2443 =
+           7 *
+         349
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+        3257 =
+        3257
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+           2 =
+           2
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+       10000 =
+           2 *
+           2 *
+           2 *
+           2 *
+           5 *
+           5 *
+           5 *
+           5
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+  n is too large! 
+  Input an integer n > 1: ( n <= 1 for interrupt ) 
+Application 1081088 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~0

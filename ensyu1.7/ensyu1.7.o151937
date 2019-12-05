@@ -1,0 +1,12 @@
+  input n, r (n must be n <= 0. If n or r < 0 then stop.) 
+ 10 P 3 =  720
+ 10 C 3 =  120
+  input n, r (n must be n <= 0. If n or r < 0 then stop.) 
+  n must be equal or smaller than 10. 
+  input n, r (n must be n <= 0. If n or r < 0 then stop.) 
+  n must be equal or greater than r. 
+  input n, r (n must be n <= 0. If n or r < 0 then stop.) 
+ 0 P 0 =  1
+ 0 C 0 =  1
+  input n, r (n must be n <= 0. If n or r < 0 then stop.) 
+Application 1056137 resources: utime ~0s, stime ~1s, Rss ~10000, inblocks ~0, outblocks ~0
