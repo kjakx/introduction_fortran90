@@ -1,3 +1,5 @@
 vscode:
   extensions:
     - krvajalm.linter-gfortran@2.1.1:JzzIpu7Ei4c6gAB1ojj1iQ==
+image:
+  file: .gitpod.dockerfile
