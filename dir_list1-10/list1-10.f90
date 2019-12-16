@@ -9,7 +9,7 @@ program file_io
     if (n < 3) stop 'stop, n < 3'
     d = 10.0d0 / dble(n - 1)
     do j = 1, n
-        y = -5.0d0 + dble( - 1) * d
+        y = -5.0d0 + dble(j - 1) * d
         do i = 1, n
             x = -5.0d0 + dble(i - 1) * d
             z = sin(x) * cos(y)
