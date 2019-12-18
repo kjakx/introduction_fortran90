@@ -23,7 +23,7 @@ program quad_eq
         write(*, *) 'x1 =', cmplx(x1_re, x1_im, 8)
         write(*, *) 'x2 =', cmplx(x2_re, x2_im, 8)
     else
-        write(*, *) 'x1 =', real(x1_re)
-        write(*, *) 'x2 =', real(x2_re)    
+        write(*, *) 'x1 =', x1_re
+        write(*, *) 'x2 =', x2_re    
     endif
 end program quad_eq
