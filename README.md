@@ -1,2 +1,2 @@
 # introduction_fortran90
-for my training
+for training
