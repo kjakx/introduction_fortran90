@@ -1,0 +1,15 @@
+set term postscript eps enhanced color
+set output '/dev/null'
+plot 'Temp_dist_at_t=00' with lines title 't=0'
+plot 'Temp_dist_at_t=01' with lines title 't=1'
+plot 'Temp_dist_at_t=02' with lines title 't=2'
+plot 'Temp_dist_at_t=03' with lines title 't=3'
+plot 'Temp_dist_at_t=04' with lines title 't=4'
+plot 'Temp_dist_at_t=05' with lines title 't=5'
+plot 'Temp_dist_at_t=06' with lines title 't=6'
+plot 'Temp_dist_at_t=07' with lines title 't=7'
+plot 'Temp_dist_at_t=08' with lines title 't=8'
+plot 'Temp_dist_at_t=09' with lines title 't=9'
+plot 'Temp_dist_at_t=10' with lines title 't=10'
+set output 'ensyu1.24.eps'
+replot

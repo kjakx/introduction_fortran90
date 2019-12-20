@@ -6,13 +6,13 @@ program rod_temp_dist
     integer :: i_n, i_x, t, n = 50, m = 20, fo = 11
     delta_x = L / dble(m)
     do t = 0, 10
-        write(t_ch, '(i2)') t
+        write(t_ch, '(i0.2)') t
         open(fo, file="Temp_dist_at_t="//t_ch)
         do i_x = 1, m + 1
             x = delta_x * dble(i_x - 1)
             do i_n = 1, n 
                 n_odd = dble(2 * i_n - 1)
-                sign = -1.0d0 ** (i_n - 1)
+                sign = (-1.0d0) ** (i_n - 1)
                 coef = 1.0d0 / (n_odd ** 2)
                 lambda2 = kappa * ( n_odd * pi / L ) ** 2
                 el2t = exp(-lambda2 * dble(t))
