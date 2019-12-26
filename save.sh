@@ -1,4 +1,4 @@
-NOW=`LANG=ja_JP.UTF-8 date` 
+NOW=`TZ=JST date` 
 git add .
 git commit -m "saved@$NOW"
 git push
