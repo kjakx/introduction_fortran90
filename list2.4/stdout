@@ -1,0 +1,4 @@
+ input n:
+ input u(1 : n) :
+ input v(1 : n) :
+ dp =   32.000000000000000     
