@@ -1,0 +1,6 @@
+ input n:
+ n =        1000
+ result(do loop): T
+ time:   25.098350000000000     
+ result(transpose): T
+ time:  0.33682300000000254     
