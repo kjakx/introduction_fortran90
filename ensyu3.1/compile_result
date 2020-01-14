@@ -1,0 +1,5 @@
+ensyu3.1.f90:18:22:
+
+     call swap(x, y, z)
+                      1
+Error: More actual than formal arguments in procedure call at (1)
