@@ -6,6 +6,7 @@ contains
         logical, save :: first_call = .true.
         if (first_call) then
             open(fo, file="output.d")
+            first_call = .false.
         end if
         if (ic == 10) then 
             close(fo)
