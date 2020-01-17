@@ -1,0 +1,5 @@
+ensyu3.6.2.f90:12:4:
+
+     a = 10
+    1
+Error: Dummy argument ‘a’ with INTENT(IN) in variable definition context (assignment) at (1)
