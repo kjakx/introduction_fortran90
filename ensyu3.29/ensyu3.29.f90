@@ -72,7 +72,7 @@ end module ensyu3_29
 program main
     use ensyu3_29
     implicit none 
-    double precision A(2, 3), P(2, 3), Q(2, 3), R(2, 3)
+    double precision A(2, 3)
     double precision PA(2, 3), QA(2, 3), RA(2, 3), AP(2, 3), AQ(2, 3), AR(2, 3) 
     A(1, :) = (/ 1.d0, 2.d0, 3.d0 /)
     A(2, :) = (/ 4.d0, 5.d0, 6.d0 /)
