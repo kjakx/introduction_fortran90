@@ -1,4 +1,4 @@
-module list3_28
+module ensyu3_37
     implicit none
 contains
     function normal_vec(v, n) result(nv)
@@ -40,14 +40,15 @@ contains
             write(*, '(100e12.4)') a(i, 1:m)
         end do 
     end subroutine print_rmatc
-end module list3_28
+end module ensyu3_37
 
 program main
-    use list3_28
+    use ensyu3_37
     implicit none
-    double precision a(3, 3)
-    a(1, :) = (/ 3., 0., 0. /)
-    a(2, :) = (/ 0., 3., 0. /)
-    a(3, :) = (/ 0., 0., 3. /)
-    call print_rmatc(gs(a, 3), "a_gs :")
+    double precision a(3, 3), T(3, 3)
+    call random_number(a)
+    T = gs(a, 3)
+    call print_rmatc(a, "a :")
+    call print_rmatc(T, "T :")
+    call print_rmatc(matmul(T, transpose(T)), "T*T^-1 :")
 end program main
