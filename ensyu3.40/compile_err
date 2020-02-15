@@ -1,0 +1,10 @@
+ensyu3.40.f90:16:18:
+
+     write(*, *) ia
+                  1
+Error: Symbol ‘ia’ at (1) has no IMPLICIT type; did you mean ‘ib’?
+ensyu3.40.f90:18:18:
+
+     write(*, *) ic
+                  1
+Error: Symbol ‘ic’ at (1) has no IMPLICIT type; did you mean ‘ib’?
