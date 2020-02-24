@@ -15,7 +15,7 @@ program phi_on_grid
         do j = 1, n2
             x(1, i, j) = dx1 * dble(i - 1)
             x(2, i, j) = dx2 * dble(j - 1)
-            phi(i, j) = sin(pi * x(1, i, j)) * sinh(pi * (1 - x(2, i, j))) / sinh(pi)
+            phi(i, j) = sin(pi * x(1, i, j)) * sinh(pi * (1.0d0 - x(2, i, j))) / sinh(pi)
         end do 
     end do 
     ! write x1, x2 on grid.d
@@ -25,12 +25,12 @@ program phi_on_grid
         end do 
         write(fno, *)
     end do
-    do j = 1, n2
-        do i = 1, n1
-            write(fno, *) (x(m, i, j), m = 1, 2), phi(i, j)
-        end do 
-        write(fno, *)
-    end do
+    ! do j = 1, n2
+    !    do i = 1, n1
+    !        write(fno, *) (x(m, i, j), m = 1, 2), phi(i, j)
+    !    end do 
+    !    write(fno, *)
+    !end do
     deallocate(x, phi)
     close(fno)
 end program phi_on_grid
