@@ -75,8 +75,10 @@ contains
                 end do
             end do
             call chk_err(phi, c, d, n1, n2, er)
-            write(*, *) 'itr, er =', itr, er
-            if(er < er0) exit
+            if (er < er0) then
+                write(*, *) ohm, itr
+                exit
+            end if
         end do
     end subroutine laplace_sor
 end module subprogs
@@ -84,23 +86,19 @@ end module subprogs
 program main
     use subprogs
     implicit none
-    integer, parameter :: n1 = 30, n2 = 30, itrmax = 100
+    integer, parameter :: n1 = 6, n2 = 6, itrmax = 100
     double precision :: phi(n1, n2), x(2, n1, n2)
-    double precision, parameter :: pi = acos(-1.0d0)
+    double precision :: ohm = 1.0d0, ohm0
     double precision, parameter :: er0 = 1.0e-6
-    double precision :: ohm = 2.0d0 / (1.0d0 + sin(pi / (n1 - 1)))
-    integer i, j, m
-    integer :: fno = 10
-    ! call random_number(phi)
-    phi(:, :) = 0.0d0
+    double precision, parameter :: pi = acos(-1.0d0)
+    integer i
+    ohm0 = 2.0d0 / (1.0d0 + sin(pi / dble(n1 - 1)))
     call set_gridx(x, n1, n2)
-    call laplace_sor(phi, x, n1, n2, ohm, itrmax, er0)
-    open(fno, file='output.d')
-    do i = 1, n1
-        do j = 1, n2
-            write(fno, *) (x(m, i, j), m = 1, 2), phi(i, j)
-        end do
-        write(fno, *)
+    do i = 1, 10
+        phi(:, :) = 0.0d0
+        ohm = 1.0d0 + 0.10d0 * (i - 1)
+        call laplace_sor(phi, x, n1, n2, ohm, itrmax, er0)
     end do
-    close(fno)
+    phi(:, :) = 0.0d0
+    call laplace_sor(phi, x, n1, n2, ohm0, itrmax, er0)
 end program main

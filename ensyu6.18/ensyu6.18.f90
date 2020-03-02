@@ -86,21 +86,40 @@ program main
     implicit none
     integer, parameter :: n1 = 30, n2 = 30, itrmax = 100
     double precision :: phi(n1, n2), x(2, n1, n2)
-    double precision, parameter :: pi = acos(-1.0d0)
     double precision, parameter :: er0 = 1.0e-6
-    double precision :: ohm = 2.0d0 / (1.0d0 + sin(pi / (n1 - 1)))
-    integer i, j, m
-    integer :: fno = 10
+    double precision, parameter :: pi = acos(-1.0d0)
+    double precision ohm
+    integer i, j
+    integer :: f_sor = 10, f_theory = 11
     ! call random_number(phi)
+    ohm = 2.0d0 / (1.0d0 + sin(pi / (n1 - 1)))
     phi(:, :) = 0.0d0
     call set_gridx(x, n1, n2)
     call laplace_sor(phi, x, n1, n2, ohm, itrmax, er0)
-    open(fno, file='output.d')
+    ! plot data calculated by sor method
+    open(f_sor, file='sor.d')
+    j = n2 / 2
     do i = 1, n1
-        do j = 1, n2
-            write(fno, *) (x(m, i, j), m = 1, 2), phi(i, j)
-        end do
-        write(fno, *)
+        write(f_sor, *) x(1, i, j), phi(i, j)
     end do
-    close(fno)
+    write(f_sor, *)
+    i = n1 / 2
+    do j = 1, n2
+        write(f_sor, *) x(2, i, j), phi(i, j)
+    end do
+    write(f_sor, *)
+    close(f_sor)
+    ! plot theoretical data
+    open(f_theory, file='theory.d')
+    j = n2 / 2
+    do i = 1, n1
+        write(f_theory, *) x(1, i, j), phi_theory(x, i, j, n1, n2)
+    end do
+    write(f_theory, *)
+    i = n1 / 2
+    do j = 1, n2
+        write(f_theory, *) x(2, i, j), phi_theory(x, i, j, n1, n2)
+    end do
+    write(f_theory, *)
+    close(f_theory)
 end program main
