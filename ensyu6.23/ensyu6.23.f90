@@ -114,7 +114,7 @@ contains
         end do
     end subroutine time_dependent_dispersion_explicit
 
-        subroutine time_dependent_dispersion_implicit(phi, x, n1, n2, dt, alpha, ohm, n_step, p_step, er0)
+    subroutine time_dependent_dispersion_implicit(phi, x, n1, n2, dt, alpha, ohm, n_step, p_step, er0)
         integer, intent(in) :: n1, n2, n_step, p_step
         double precision, intent(out) :: phi(n1, n2), x(2, n1, n2)
         double precision, intent(in) :: dt, alpha, ohm, er0
